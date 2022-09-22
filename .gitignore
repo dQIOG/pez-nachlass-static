@@ -143,3 +143,5 @@ desktop.ini
 .DS_Store
 data/editions/*.xml
 secret.env
+html/*.rdf
+html/*.html

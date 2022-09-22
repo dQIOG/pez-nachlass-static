@@ -1,7 +1,6 @@
 import glob
 import os
 import shutil
-from tqdm import tqdm
 
 TARGET_DIR = './data/editions'
 
@@ -11,7 +10,8 @@ files = sorted(glob.glob('./pez-editions-legacy-master/102_derived_tei/102_07_be
 print(len(files))
 
 
-for x in tqdm(files, total=len(files)):
+for x in files:
     _, tail = os.path.split(x)
     new_location = os.path.join(TARGET_DIR, tail)
+    print(f"copy {x} to {new_location}")
     shutil.move(x, new_location)
