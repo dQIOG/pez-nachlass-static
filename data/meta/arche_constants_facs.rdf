@@ -1,0 +1,25 @@
+<acdh:TopCollection rdf:about="https://id.acdh.oeaw.ac.at/pez/pez-faksimiles">
+    <acdh:hasTitle xml:lang="en">The digitized papers of Bernhard and Hieronymus Pez (Facsimiles)</acdh:hasTitle>
+    <acdh:hasDescription xml:lang="en">This collection contains c. 50.000 image files of a total of roughly 800 items kept in the archives and library of Melk Abbey (AT). These items - letters, manuscripts, copies, notes - document the scholarly work of the two Benedictine historians Bernhard (+1735) and Hieronymus (+1762) Pez.</acdh:hasDescription>
+    <acdh:hasAppliedMethodDescription xml:lang="de">The photographs were made and processed in 2009/2010 by Abubakar Sidyk Bisayew on the premises and with the infrastructure of the Diözesanarchiv. St. Pölten.</acdh:hasAppliedMethodDescription>
+    <acdh:hasCoverageStartDate>1500-01-01</acdh:hasCoverageStartDate>
+    <acdh:hasCoverageEndDate>1900-12-31</acdh:hasCoverageEndDate>
+    <acdh:hasCollectedStartDate>2009-01-01</acdh:hasCollectedStartDate>
+    <acdh:hasCollectedEndDate>2011-12-31</acdh:hasCollectedEndDate>
+    <acdh:hasPid>https://hdl.handle.net/21.11115/0000-000E-634C-E</acdh:hasPid>
+    <acdh:hasPrincipalInvestigator rdf:resource="https://id.acdh.oeaw.ac.at/twallnig"/>
+    <acdh:hasDigitisingAgent rdf:resource="https://id.acdh.oeaw.ac.at/asbisayew"/>
+    <acdh:hasMetadataCreator rdf:resource="https://id.acdh.oeaw.ac.at/asbisayew"/>
+    <acdh:hasMetadataCreator rdf:resource="https://id.acdh.oeaw.ac.at/irabl"/>
+    <acdh:hasLicense rdf:resource="https://vocabs.acdh.oeaw.ac.at/archelicenses/inc"/>
+    <acdh:hasLicensor rdf:resource="https://id.acdh.oeaw.ac.at/smelk"/>
+    <acdh:hasRightsHolder rdf:resource="https://id.acdh.oeaw.ac.at/smelk"/>
+    <acdh:hasOwner rdf:resource="https://id.acdh.oeaw.ac.at/smelk"/>
+    <acdh:hasContact rdf:resource="https://id.acdh.oeaw.ac.at/vemg"/>
+    <acdh:hasDepositor rdf:resource="https://id.acdh.oeaw.ac.at/vemg"/>
+    <acdh:hasCurator rdf:resource="https://id.acdh.oeaw.ac.at/pandorfer"/>
+    <acdh:hasCurator rdf:resource="https://id.acdh.oeaw.ac.at/uczeitschner"/>
+    <acdh:hasRelatedDiscipline rdf:resource="https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/601"/>
+    <!-- Geschichte, Archäologie -->
+    <acdh:hasSubject xml:lang="de">Pez</acdh:hasSubject>
+</acdh:TopCollection>
