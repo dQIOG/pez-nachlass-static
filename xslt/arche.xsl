@@ -23,7 +23,6 @@
                 <xsl:attribute name="rdf:about">
                     <xsl:value-of select=".//acdh:TopCollection/@rdf:about"/>
                 </xsl:attribute>
-                <xsl:copy-of select="$constants"/>
                 <xsl:for-each select=".//node()[parent::acdh:TopCollection]">
                     <xsl:copy-of select="."/>
                 </xsl:for-each>
@@ -36,13 +35,12 @@
             <xsl:for-each select=".//acdh:Collection">
                 <acdh:Collection>
                     <xsl:attribute name="rdf:about"><xsl:value-of select="@rdf:about"/></xsl:attribute>
-                    <xsl:copy-of select="$constants"/>
                     <xsl:for-each select=".//node()">
                         <xsl:copy-of select="."/>
                     </xsl:for-each>
                 </acdh:Collection>
             </xsl:for-each>
-            <xsl:for-each select="subsequence(collection('../data/editions')//tei:TEI, 1, 20)">
+            <xsl:for-each select="collection('../data/editions')//tei:TEI">
 
                 <xsl:variable name="partOf">
                     <xsl:value-of select="$TopColId"/>
