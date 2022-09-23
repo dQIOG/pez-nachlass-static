@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BASEROW_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
-    env:
       ANT_OPTS: -Xmx5g
     steps:
     - name: Perform Checkout
