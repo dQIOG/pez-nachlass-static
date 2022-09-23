@@ -46,7 +46,7 @@
                     <xsl:value-of select="$TopColId"/>
                 </xsl:variable>
                 <xsl:variable name="id">
-                    <xsl:value-of select="concat($partOf, '/', @xml:id)"/>
+                    <xsl:value-of select="concat($partOf, '/pez/', @xml:id)"/>
                 </xsl:variable>
                 <xsl:variable name="date">
                     <xsl:choose>

@@ -8,6 +8,8 @@
         <acdh:hasDescription xml:lang="de">Diese Sammlung enthält TEI-XML-Beschreibungen von etwa 800 Objekten, die im Archiv und in der Bibliothek des Stifts Melk (AT) aufbewahrt werden, sowie etwa 50.000 Bilddateien dieser Dokumente. Diese Objekte - Briefe, Manuskripte, Abschriften, Notizen - dokumentieren die wissenschaftliche Arbeit der beiden benediktinischen Historiker Bernhard (+1735) und Hieronymus (+1762) Pez.</acdh:hasDescription>
         <acdh:hasAppliedMethodDescription xml:lang="en">The descriptions were first created by Irene Rabl for the university of Vienna's asset management system Unidam, customized for the Pez papers by Ralf Pausz. From 2016, Daniel Schopper, and later Ulrike Czeitschner have arranged the transformation into TEI-XML MsDesc files.</acdh:hasAppliedMethodDescription>
         <acdh:hasAppliedMethodDescription xml:lang="de">Die Beschreibungen wurden zunächst von Irene Rabl für das Asset Management System Unidam der Universität Wien erstellt und von Ralf Pausz für die Pez-Papiere angepasst. Ab 2016 haben Daniel Schopper und später Ulrike Czeitschner die Transformation in TEI-XML MsDesc-Dateien vorgenommen.</acdh:hasAppliedMethodDescription>
+        <acdh:hasArrangement xml:lang="en">TEI-XML files and image files are stored in separate collections. The image files are in turn divided into their own collections according to the associated objects (letters, manuscripts, ...).</acdh:hasArrangement>
+        <acdh:hasArrangement xml:lang="de">TEI-XML Dateien und Bilddateien sind in jeweils eigenen Sammlungen abgelegt. Die Bilddateien sind wiederum nach den zugehören Objekten (Briefen, Handschriften, ...) in eigene Sammlungen unterteilt.</acdh:hasArrangement>
         <acdh:hasCoverageStartDate>1500-01-01</acdh:hasCoverageStartDate>
         <acdh:hasCoverageEndDate>1900-12-31</acdh:hasCoverageEndDate>
         <acdh:hasCollectedStartDate>2009-01-01</acdh:hasCollectedStartDate>
@@ -44,6 +46,8 @@
         <acdh:hasDescription xml:lang="de">Diese Sammlung enthält ca. 50.000 Bilddateien von insgesamt etwa 800 Objekten, die im Archiv und in der Bibliothek des Stifts Melk (AT) aufbewahrt werden. Diese Gegenstände - Briefe, Manuskripte, Abschriften, Notizen - dokumentieren die wissenschaftliche Arbeit der beiden Benediktinerhistoriker Bernhard (+1735) und Hieronymus (+1762) Pez.</acdh:hasDescription>
         <acdh:hasAppliedMethodDescription xml:lang="en">The photographs were made and processed in 2009/2010 by Abubakar Sidyk Bisayew on the premises and with the infrastructure of the Diözesanarchiv. St. Pölten.</acdh:hasAppliedMethodDescription>
         <acdh:hasAppliedMethodDescription xml:lang="de">Die Fotografien wurden 2009/2010 von Abubakar Sidyk Bisayew in den Räumlichkeiten und mit der Infrastruktur des Diözesanarchivs erstellt und bearbeitet. St. Pölten.</acdh:hasAppliedMethodDescription>
+        <acdh:hasArrangement xml:lang="en">The metadata for each subcollection comes from the associated XML-TEI encoded manuscript descriptions. The individual image files in turn refer to the associated description via the ARCHE metadata property "isSourceOf".</acdh:hasArrangement>
+        <acdh:hasArrangement xml:lang="de">Die Untersammlungen entsprechen den physischen Objekten (Briefe, Handschriften, ...) der Digitalisate. Die Metadaten der einzelnen Untersammlungen entstammen aus den zugehörigen XML-TEI kodierten Handschriftenbeschreibungen. Die einzelnen Bilddateien wiederum verweisen über die ARCHE Metadaten Eigenschaft "isSourceOf" auf die zugehörige Beschreibung.</acdh:hasArrangement>
         <acdh:hasCoverageStartDate>1500-01-01</acdh:hasCoverageStartDate>
         <acdh:hasCoverageEndDate>1900-12-31</acdh:hasCoverageEndDate>
         <acdh:hasCollectedStartDate>2009-01-01</acdh:hasCollectedStartDate>
@@ -71,8 +75,8 @@
         <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/pez-nachlass"/>
         <acdh:hasTitle xml:lang="en">TEI-XML encoded manuscript descriptions of digitized papers of Bernhard and Hieronymus Pez</acdh:hasTitle>
         <acdh:hasTitle xml:lang="de">TEI-XML kodierte Manuskriptbeschreibungen der digitalisierten Nachlässe von Bernhard und Hieronymus Pez</acdh:hasTitle>
-        <acdh:hasDescription xml:lang="en">This collection contains TEI-XML descriptions of roughly 800 items kept in the archives and library of Melk Abbey (AT)</acdh:hasDescription>
-        <acdh:hasDescription xml:lang="de">Diese Sammlung enthält TEI-XML-Beschreibungen von etwa 800 Objekten, die im Archiv und in der Bibliothek des Stifts Melk (AT) aufbewahrt werden</acdh:hasDescription>
+        <acdh:hasDescription xml:lang="en">TEI-XML encoded manuscript descriptions of the digitized bequests of Bernhard and Hieronymus Pez. The descriptions include information on the exact archive signature, a brief summary of the contents, further bibliographic information, and page-by-page links to the facsimiles.</acdh:hasDescription>
+        <acdh:hasDescription xml:lang="de">TEI-XML-kodierte Handschriftenbeschreibungen der digitalisierten Nachlässe von Bernhard und Hieronymus Pez. Die Beschreibungen enthalten Angaben zur genauen Archivsignatur, eine kurze Zusammenfassung des Inhalts, weitere bibliografische Informationen und seitenweise Links zu den Faksimiles.</acdh:hasDescription>
         <acdh:hasCoverageStartDate>1500-01-01</acdh:hasCoverageStartDate>
         <acdh:hasCoverageEndDate>1900-12-31</acdh:hasCoverageEndDate>
         <acdh:hasCollectedStartDate>2009-01-01</acdh:hasCollectedStartDate>
