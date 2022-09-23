@@ -1,6 +1,10 @@
-<project basedir="." name="tei2html">
-    <xslt in="./data/meta/arche_constants.rdf" out="./html/arche.rdf" style="./xslt/arche.xsl">
+<project basedir=".">
+    <xslt in="./data/meta/arche_constants.rdf" out="./html/arche-constants.rdf" style="./xslt/arche-constants.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
+    <!--<xslt in="./data/meta/arche_constants.rdf" out="./html/arche.rdf" style="./xslt/arche.xsl">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>-->
 </project>
