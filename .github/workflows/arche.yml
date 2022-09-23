@@ -29,13 +29,13 @@ jobs:
         composer require "acdh-oeaw/arche-ingest:^1"
     - name: ingest ARCHE-CONSTANTS
       run: |
-        vendor/bin/arche-import-metadata html/arche-constants.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}}--retriesOnConflict 25
+        vendor/bin/arche-import-metadata html/arche-constants.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
     - name: ingest msdesc resources and facs-cols
       run: |
-        vendor/bin/arche-import-metadata html/arche.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}}--retriesOnConflict 25
+        vendor/bin/arche-import-metadata html/arche.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
     - name: ingest facs-res
       run: |
-        vendor/bin/arche-import-metadata html/arche-facs.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}}--retriesOnConflict 25
+        vendor/bin/arche-import-metadata html/arche-facs.rdf https://arche-dev.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
     - name: Copy XML Files to to_ingest 
       run: |
         mkdir $PWD/to_ingest
