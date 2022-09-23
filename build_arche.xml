@@ -1,4 +1,7 @@
 <project basedir=".">
+    <delete>
+        <fileset dir="./html/" includes="*.rdf"/>
+    </delete>
     <xslt in="./data/meta/arche_constants.rdf" out="./html/arche-constants.rdf" style="./xslt/arche-constants.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
