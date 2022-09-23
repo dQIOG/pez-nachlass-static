@@ -8,7 +8,7 @@ jobs:
     name: Ingest Data into ARCHE
     runs-on: ubuntu-latest
     env:
-      BASEROW_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
+      MY_GITHUB_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
       ANT_OPTS: -Xmx5g
       TESTRUN: HANSI4EVER
     steps:
