@@ -177,6 +177,7 @@
     </acdh:RepoObject>
     
     <acdh:RepoObject type="facs-res">
+        <acdh:hasDigitisingAgent rdf:resource="https://id.acdh.oeaw.ac.at/asbisayew"/>
         <acdh:hasMetadataCreator rdf:resource="https://id.acdh.oeaw.ac.at/asbisayew"/>
         <acdh:hasMetadataCreator rdf:resource="https://id.acdh.oeaw.ac.at/irabl"/>
         <acdh:hasLicense rdf:resource="https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-nc-nd-4-0"/>
@@ -184,9 +185,8 @@
         <acdh:hasRightsHolder rdf:resource="https://id.acdh.oeaw.ac.at/smelk"/>
         <acdh:hasOwner rdf:resource="https://id.acdh.oeaw.ac.at/smelk"/>
         <acdh:hasDepositor rdf:resource="https://id.acdh.oeaw.ac.at/vemg"/>
-        <acdh:hasRightsHolder rdf:resource="https://id.acdh.oeaw.ac.at/vemg"/>
+        <acdh:hasRightsHolder rdf:resource="https://id.acdh.oeaw.ac.at/smelk"/>
         <acdh:hasOaiSet rdf:resource="https://vocabs.acdh.oeaw.ac.at/archeoaisets/kulturpool"/>
-        <acdh:hasOaiSet rdf:resource="https://vocabs.acdh.oeaw.ac.at/archeoaisets/clarin-vlo"/>
         <acdh:hasActor rdf:resource="https://d-nb.info/gnd/117703575"/>
         <acdh:hasActor rdf:resource="https://d-nb.info/gnd/100226965"/>
     </acdh:RepoObject>

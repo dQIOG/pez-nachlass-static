@@ -11,7 +11,14 @@ print(len(files))
 
 
 for x in files:
-    _, tail = os.path.split(x)
-    new_location = os.path.join(TARGET_DIR, tail)
-    print(f"copy {x} to {new_location}")
-    shutil.move(x, new_location)
+    if os.environ.get('TESTRUN'):
+        if 'msDesc_411087.xml' in x or 'msDesc_407573.xml' in x:
+            _, tail = os.path.split(x)
+            new_location = os.path.join(TARGET_DIR, tail)
+            print(f"copy {x} to {new_location}")
+            shutil.move(x, new_location)
+    else:
+        _, tail = os.path.split(x)
+        new_location = os.path.join(TARGET_DIR, tail)
+        print(f"copy {x} to {new_location}")
+        shutil.move(x, new_location)
