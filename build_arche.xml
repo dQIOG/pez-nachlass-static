@@ -3,8 +3,8 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
-    <!--<xslt in="./data/meta/arche_constants.rdf" out="./html/arche.rdf" style="./xslt/arche.xsl">
+    <xslt in="./data/meta/arche_constants.rdf" out="./html/arche.rdf" style="./xslt/arche.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>-->
+    </xslt>
 </project>
