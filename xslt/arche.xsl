@@ -48,20 +48,7 @@
                 <xsl:variable name="id">
                     <xsl:value-of select="concat($partOf, '/', @xml:id)"/>
                 </xsl:variable>
-                
-                <acdh:Resource rdf:about="{$id}">
-                    <acdh:hasPid><xsl:value-of select=".//tei:idno[@type='handle']/text()"/></acdh:hasPid>
-                    <acdh:hasTitle xml:lang="de"><xsl:value-of select=".//tei:title[@type='main'][1]/text()"/></acdh:hasTitle>
-                    <acdh:hasDescription xml:lang="de"><xsl:value-of select="string-join(.//tei:summary//text())"/></acdh:hasDescription>
-                    <!--<acdh:hasCoverage xml:lang="de"><xsl:value-of select="$datum"/></acdh:hasCoverage>-->
-                    <acdh:hasAccessRestriction rdf:resource="https://vocabs.acdh.oeaw.ac.at/archeaccessrestrictions/public"/>
-                    <acdh:hasCategory rdf:resource="https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei"/>
-                    <acdh:hasLanguage rdf:resource="https://vocabs.acdh.oeaw.ac.at/iso6393/deu"/>
-                    <acdh:isPartOf rdf:resource="{$partOf}"/>
-                    <acdh:hasSubject xml:lang="de"><xsl:value-of select=".//tei:classCode/text()"/></acdh:hasSubject>
-                    <acdh:hasNote xml:lang="de"><xsl:value-of select="normalize-space(string-join(.//tei:foliation//text()))"/></acdh:hasNote>
-                    <acdh:hasNonLinkedIdentifier><xsl:value-of select="concat('unidam-verz_einh: ', data(.//tei:idno[@type='unidam-verz_einh'][1]))"/></acdh:hasNonLinkedIdentifier>
-                    
+                <xsl:variable name="date">
                     <xsl:choose>
                         <xsl:when test=".//tei:date[1]/@when">
                             <acdh:hasCoverageStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"><xsl:value-of select="data(.//tei:date/@when)"/></acdh:hasCoverageStartDate>
@@ -78,6 +65,25 @@
                             <acdh:hasCoverageEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"><xsl:value-of select="data(.//tei:date[1]/@notAfter)"/></acdh:hasCoverageEndDate>
                         </xsl:when>
                     </xsl:choose>
+                </xsl:variable>
+                
+                <acdh:Resource rdf:about="{$id}">
+                    <acdh:hasPid><xsl:value-of select=".//tei:idno[@type='handle']/text()"/></acdh:hasPid>
+                    <acdh:hasTitle xml:lang="de"><xsl:value-of select=".//tei:title[@type='main'][1]/text()"/></acdh:hasTitle>
+                    <acdh:hasDescription xml:lang="de"><xsl:value-of select="string-join(.//tei:summary//text())"/></acdh:hasDescription>
+                    <!--<acdh:hasCoverage xml:lang="de"><xsl:value-of select="$datum"/></acdh:hasCoverage>-->
+                    <acdh:hasAccessRestriction rdf:resource="https://vocabs.acdh.oeaw.ac.at/archeaccessrestrictions/public"/>
+                    <acdh:hasCategory rdf:resource="https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei"/>
+                    <acdh:hasLanguage rdf:resource="https://vocabs.acdh.oeaw.ac.at/iso6393/deu"/>
+                    <acdh:isPartOf rdf:resource="{$partOf}"/>
+                    <acdh:hasSubject xml:lang="de"><xsl:value-of select=".//tei:classCode/text()"/></acdh:hasSubject>
+                    <acdh:hasNote xml:lang="de"><xsl:value-of select="normalize-space(string-join(.//tei:foliation//text()))"/></acdh:hasNote>
+                    <acdh:hasNonLinkedIdentifier><xsl:value-of select="concat('unidam-verz_einh: ', data(.//tei:idno[@type='unidam-verz_einh'][1]))"/></acdh:hasNonLinkedIdentifier>
+                    <xsl:for-each select="$date">
+                        <xsl:copy-of select="."></xsl:copy-of>
+                    </xsl:for-each>
+                    
+                    
                     
                     <xsl:copy-of select="$constants"/>
                     

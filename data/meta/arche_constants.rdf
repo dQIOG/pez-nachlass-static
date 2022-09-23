@@ -86,7 +86,6 @@
 
     <!--     mandatory properties shared by acdh:Collection AND acdh:Resource -->
     <acdh:RepoObject>
-        <acdh:hasPrincipalInvestigator rdf:resource="https://id.acdh.oeaw.ac.at/twallnig"/>
         <acdh:hasCreator rdf:resource="https://id.acdh.oeaw.ac.at/asbisayew"/>
         <acdh:hasCreator rdf:resource="https://id.acdh.oeaw.ac.at/irabl"/>
         <acdh:hasMetadataCreator rdf:resource="https://id.acdh.oeaw.ac.at/asbisayew"/>
@@ -111,4 +110,5 @@
         <acdh:hasRelatedDiscipline rdf:resource="https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/601"/>
         <acdh:hasSubject xml:lang="de">Pez</acdh:hasSubject>
     </acdh:RepoObject>
+    
 </acdh:ACDH>
