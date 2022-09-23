@@ -20,7 +20,7 @@ jobs:
         ./dl_saxon.sh
     - name: fetch data
       run: |
-        ./fetch_data
+        ./fetch_data.sh
     - name: Build
       run: |
         ant -f build_arche.xml
