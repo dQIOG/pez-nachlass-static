@@ -44,6 +44,7 @@
                             <xsl:value-of select="concat($filename, '; ', data(./@n))"/>
                         </acdh:hasTitle>
                         <acdh:hasCategory rdf:resource="https://vocabs.acdh.oeaw.ac.at/archecategory/image"/>
+                        <acdh:isSourceOf rdf:resource="{$id}"></acdh:isSourceOf>
                         <xsl:copy-of select="$facsConstants"/>
                     </acdh:Resource>
                 </xsl:for-each>
