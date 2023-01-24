@@ -10,7 +10,7 @@ jobs:
     env:
       MY_GITHUB_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
       ANT_OPTS: -Xmx5g
-      # TESTRUN: HANSI4EVER
+      TESTRUN: HANSI4EVER
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v2
