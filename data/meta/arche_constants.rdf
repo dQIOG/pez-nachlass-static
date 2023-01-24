@@ -36,6 +36,7 @@
         <acdh:hasSubject xml:lang="de">Nachlass</acdh:hasSubject>
         <acdh:hasActor rdf:resource="https://d-nb.info/gnd/117703575"/>
         <acdh:hasActor rdf:resource="https://d-nb.info/gnd/100226965"/>
+        <acdh:hasCustomCitation>author = {Wallnig, Thomas and Rabl, Irene and Bisayew, Abubakar Sidyk}</acdh:hasCustomCitation>
     </acdh:TopCollection>
 
     <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/pez-faksimiles">
@@ -146,11 +147,30 @@
             <acdh:hasLastName xml:lang="und">Andorfer</acdh:hasLastName>
         </acdh:Person>
         <acdh:Organisation rdf:about="https://id.acdh.oeaw.ac.at/vemg">
-            <acdh:hasTitle xml:lang="de">Verein zur Erforschung monastischer Gelehrsamkeit in der
-                    Frühen Neuzeit</acdh:hasTitle>
+            <acdh:hasTitle xml:lang="de">Verein zur Erforschung monastischer Gelehrsamkeit in der Frühen Neuzeit</acdh:hasTitle>
+            <acdh:hasAddressLine1>Universitätsring 1</acdh:hasAddressLine1>
+            <acdh:hasAddressLine2>c/o Universität Wien, Institut für Österreichische Geschichtsforschung</acdh:hasAddressLine2>
+            <acdh:hasPostcode>1010</acdh:hasPostcode>
+            <acdh:hasCity xml:lang="de">Wien</acdh:hasCity>
+            <acdh:hasRegion xml:lang="de">Wien</acdh:hasRegion>
+            <acdh:hasCountry xml:lang="de">Österreich</acdh:hasCountry>
+            <acdh:hasCity xml:lang="en">Vienna</acdh:hasCity>
+            <acdh:hasRegion xml:lang="en">Vienna</acdh:hasRegion>
+            <acdh:hasCountry xml:lang="en">Austria</acdh:hasCountry>
+            <acdh:hasEmail>info@vemg.at</acdh:hasEmail>
+            <acdh:hasUrl>http://vemg.at</acdh:hasUrl>
         </acdh:Organisation>
         <acdh:Organisation rdf:about="https://id.acdh.oeaw.ac.at/smelk">
-            <acdh:hasTitle xml:lang="de">Kloster Melk</acdh:hasTitle>
+            <acdh:hasTitle xml:lang="de">Stift Melk</acdh:hasTitle>
+            <acdh:hasAlternativeTitle xml:lang="de">Benediktinerstift Melk</acdh:hasAlternativeTitle>
+            <acdh:hasAddressLine1>Abt-Berthold-Dietmayr-Straße 1</acdh:hasAddressLine1>
+            <acdh:hasPostcode>3390</acdh:hasPostcode>
+            <acdh:hasCity xml:lang="de">Melk</acdh:hasCity>
+            <acdh:hasRegion xml:lang="de">Niederösterreich</acdh:hasRegion>
+            <acdh:hasRegion xml:lang="en">Lower Austria</acdh:hasRegion>
+            <acdh:hasCountry xml:lang="de">Österreich</acdh:hasCountry>
+            <acdh:hasCountry xml:lang="en">Austria</acdh:hasCountry>
+            <acdh:hasUrl>https://www.stiftmelk.at</acdh:hasUrl>
             <acdh:hasIdentifier rdf:resource="https://d-nb.info/gnd/82463-X"/>
         </acdh:Organisation>
     </acdh:MetaAgents>
