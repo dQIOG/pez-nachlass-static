@@ -149,3 +149,4 @@ html/*.rdf
 html/*.html
 vendor/
 composer.*
+hansi.md
