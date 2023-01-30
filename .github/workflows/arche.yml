@@ -19,7 +19,7 @@ jobs:
     - name: Install Saxon and Ant
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
-        ./dl_saxon.sh
+        ./dl_saxon.sh && pip install -r requirements.txt
     - name: fetch data
       run: |
         ./fetch_data.sh
