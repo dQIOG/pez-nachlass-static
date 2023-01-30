@@ -17,4 +17,6 @@
 
 echo "ingest facs-binaries"
 
-vendor/bin/arche-import-binary /mnt/acdh_resources/container/C_pez_19366/R_pez_unidam_export_8768/034 https://id.acdh.oeaw.ac.at/pez-nachlass http://127.0.0.1/api username password --skip not_exist --flatStructure
+vendor/bin/arche-import-binary /mnt/acdh_resources/container/C_pez_19366/R_pez_unidam_export_8768 https://id.acdh.oeaw.ac.at/pez-nachlass http://127.0.0.1/api username password --skip not_exist --flatStructure
+
+vendor/bin/arche-import-binary /mnt/acdh_resources/ARCHE/playground/ https://id.acdh.oeaw.ac.at/pez-nachlass http://127.0.0.1/api username password --skip not_exist --flatStructure
