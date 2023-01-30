@@ -1,7 +1,6 @@
 import glob
 import os
 import shutil
-from tqdm import tqdm
 from acdh_tei_pyutils.tei import TeiReader
 
 TARGET_DIR = './data/editions'
@@ -26,9 +25,10 @@ for x in files:
         shutil.move(x, new_location)
 
 files = sorted(glob.glob('./data/editions/*.xml'))
-for x in tqdm(files):
+for x in files:
     doc = TeiReader(x)
     for y in doc.any_xpath('//tei:graphic'):
         old = y.attrib["url"].split('/')[-1]
         new = y.attrib["url"] = f"https://id.acdh.oeaw.ac.at/pez-nachlass/{old}.tif"
+        print(new)
     doc.tree_to_file(x)
