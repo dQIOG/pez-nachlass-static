@@ -12,5 +12,5 @@ vendor/bin/arche-import-metadata html/arche-constants.rdf http://127.0.0.1/api u
 echo "ingest msdesc resources and facs-cols"
 vendor/bin/arche-import-metadata html/arche.rdf http://127.0.0.1/api username password --retriesOnConflict 25
 
-# echo "ingest facs-res"
-# vendor/bin/arche-import-metadata html/arche-facs.rdf http://127.0.0.1/api username password --retriesOnConflict 25
+echo "ingest facs-res"
+vendor/bin/arche-import-metadata html/arche-facs.rdf http://127.0.0.1/api username password --retriesOnConflict 25
