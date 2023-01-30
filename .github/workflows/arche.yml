@@ -12,6 +12,7 @@ jobs:
       ANT_OPTS: -Xmx5g
       REDMINE_ID: 12014
       TESTRUN: HANSI4EVER
+      ARCHE_INSTANCE: arche-curation.acdh-dev
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v3
@@ -31,13 +32,13 @@ jobs:
       run: echo "RUN_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_ENV
     - name: ingest ARCHE-CONSTANTS
       run: |
-        vendor/bin/arche-import-metadata html/arche-constants.rdf https://arche-curation.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
+        vendor/bin/arche-import-metadata html/arche-constants.rdf https://${ARCHE_INSTANCE}.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
     - name: ingest msdesc resources and facs-cols
       run: |
-        vendor/bin/arche-import-metadata html/arche.rdf https://arche-curation.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
+        vendor/bin/arche-import-metadata html/arche.rdf https://${ARCHE_INSTANCE}.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
     - name: ingest facs-res
       run: |
-        vendor/bin/arche-import-metadata html/arche-facs.rdf https://arche-curation.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
+        vendor/bin/arche-import-metadata html/arche-facs.rdf https://${ARCHE_INSTANCE}.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --retriesOnConflict 25
     - name: Copy XML Files to to_ingest 
       run: |
         mkdir $PWD/to_ingest
@@ -60,7 +61,7 @@ jobs:
     - name: ingest binaries
       run: |
         echo 'STEP=Upload AIP to Curation Instance (Minerva)' >> $GITHUB_ENV
-        vendor/bin/arche-import-binary to_ingest https://id.acdh.oeaw.ac.at/pez-nachlass https://arche-curation.acdh-dev.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --skip not_exist
+        vendor/bin/arche-import-binary to_ingest https://id.acdh.oeaw.ac.at/pez-nachlass https://${ARCHE_INSTANCE}.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --skip not_exist
         vendor/bin/arche-update-redmine --token ${{ secrets.REDMINE_TOKEN }} --append "$RUN_URL" $REDMINE_ID 'Upload AIP to Curation Instance (Minerva)'
     - name: on failure
       if: ${{ failure() }}
