@@ -7,7 +7,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
     version="2.0" exclude-result-prefixes="#all">
-    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
+    <xsl:output encoding="UTF-8" media-type="application/xml" method="xml" version="1.0" indent="no" omit-xml-declaration="yes"/>
     
     <xsl:template match="/">
         
