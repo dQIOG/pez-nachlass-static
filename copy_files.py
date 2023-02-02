@@ -32,3 +32,4 @@ for x in files:
         old = y.attrib["url"].split('/')[-1]
         new = y.attrib["url"] = f"https://id.acdh.oeaw.ac.at/pez-nachlass/{old}.tif"
     doc.tree_to_file(x)
+    

@@ -43,6 +43,7 @@ jobs:
       run: |
         mkdir $PWD/to_ingest
         find -path "./data/editions/*.xml" -exec cp -prv '{}' './to_ingest' ';'
+        cp pez-title-image.jpg ./to_ingest/pez-title-image.jpg
     - name: cache AV database
       id: avdb
       uses: actions/cache@v3
