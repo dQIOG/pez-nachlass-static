@@ -11,7 +11,7 @@ jobs:
       MY_GITHUB_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
       ANT_OPTS: -Xmx5g
       REDMINE_ID: 12014
-      TESTRUN: HANSI4EVER
+      # TESTRUN: HANSI4EVER
       ARCHE_INSTANCE: arche.acdh
     steps:
     - name: Perform Checkout
