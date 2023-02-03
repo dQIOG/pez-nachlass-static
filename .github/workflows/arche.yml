@@ -12,7 +12,7 @@ jobs:
       ANT_OPTS: -Xmx5g
       REDMINE_ID: 12014
       TESTRUN: HANSI4EVER
-      ARCHE_INSTANCE: arche-curation.acdh-dev
+      ARCHE_INSTANCE: arche.acdh
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v3
@@ -61,9 +61,9 @@ jobs:
         vendor/bin/arche-update-redmine --token ${{ secrets.REDMINE_TOKEN }} --append "$RUN_URL" $REDMINE_ID 'Run repo-file-checker'
     - name: ingest binaries
       run: |
-        echo 'STEP=Upload AIP to Curation Instance (Minerva)' >> $GITHUB_ENV
+        echo 'STEP=Upload AIP to Productive Instance (Apollo)' >> $GITHUB_ENV
         vendor/bin/arche-import-binary to_ingest https://id.acdh.oeaw.ac.at/pez-nachlass https://${ARCHE_INSTANCE}.oeaw.ac.at/api ${{secrets.ARCHE_LOGIN}} ${{secrets.ARCHE_PASSWORD}} --skip not_exist
-        vendor/bin/arche-update-redmine --token ${{ secrets.REDMINE_TOKEN }} --append "$RUN_URL" $REDMINE_ID 'Upload AIP to Curation Instance (Minerva)'
+        vendor/bin/arche-update-redmine --token ${{ secrets.REDMINE_TOKEN }} --append "$RUN_URL" $REDMINE_ID 'Upload AIP to Productive Instance (Apollo)'
     - name: on failure
       if: ${{ failure() }}
       run: |
